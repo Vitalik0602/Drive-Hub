@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Drive Hub — современные авто с пробегом</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Drive Hub — подбор и продажа проверенных автомобилей с пробегом." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__mark">
+          <img src="logo-drivehub.png" alt="Drive Hub" />
+        </span>
+        <span class="logo__text">Drive Hub</span>
+      </a>
+      <nav class="nav">
+        <a href="#catalog" class="nav__link">Каталог</a>
+        <a href="#process" class="nav__link">Как это работает</a>
+        <a href="#benefits" class="nav__link">Преимущества</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+      <a href="#contacts" class="btn btn--outline header__cta">Оставить заявку</a>
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+<section class="hero">
+  <div class="container hero__inner">
+
+    <!-- TEXT BLOCK -->
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Современные авто с пробегом<br />
+        <span>как из салона</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Drive Hub — прозрачная история, живая диагностика и честные цены. 
+        Выбирай машину, а не головную боль.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#catalog" class="btn">Смотреть каталог</a>
+        <a href="#process" class="btn btn--ghost">Как всё устроено</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="0">0</span>
+          <span class="hero__stat-label">авто продано</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="100">0</span>
+          <span class="hero__stat-label">% довольных клиентов</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="1">0</span>
+          <span class="hero__stat-label">день от выбора до выдачи</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW PREMIUM VISUAL -->
+    <div class="hero__visual hero-visual--premium">
+
+      <!-- Background glow -->
+      <div class="hero-bg-glow"></div>
+
+      <!-- 3D platform -->
+      <div class="hero-platform" id="heroPlatform">
+        <img src="img/hero-car.png" alt="Car" class="hero-car-img" id="heroCar">
+      </div>
+
+      <!-- Badges -->
+      <div class="hero-badges">
+        <span>VIN‑проверка</span>
+        <span>Диагностика</span>
+        <span>Гарантия</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Catalog -->
+  <section class="section" id="catalog">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Каталог автомобилей</h2>
+        <p class="section__subtitle">Актуальные предложения. Каждый автомобиль проверен по нескольким базам и на сервисе.</p>
+      </div>
+
+      <div class="filters">
+        <div class="filters__group">
+          <label class="filters__label">Марка</label>
+          <select class="filters__select">
+            <option>Любая</option>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Mercedes-Benz</option>
+            <option>Toyota</option>
+          </select>
+        </div>
+        <div class="filters__group">
+          <label class="filters__label">Коробка</label>
+          <select class="filters__select">
+            <option>Любая</option>
+            <option>Автомат</option>
+            <option>Механика</option>
+          </select>
+        </div>
+        <div class="filters__group">
+          <label class="filters__label">Бюджет</label>
+          <select class="filters__select">
+            <option>До 1 000 000 ₽</option>
+            <option>1 000 000 – 2 000 000 ₽</option>
+            <option>2 000 000+ ₽</option>
+          </select>
+        </div>
+        <button class="btn filters__btn">Подобрать</button>
+      </div>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <article class="card fade-in">
+          <a href="14.html" class="card__image-wrap">
+            <img src="img/14.png" alt="14" class="card__image" />
+
+            <span class="card__badge">В наличии</span>
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">ВАЗ 2114</h3>
+            <p class="card__meta">2003 • 1.5 бензин • Механика • 293 000 км</p>
+            <div class="card__row">
+              <span class="card__price">130 000 ₽</span>
+              <span class="card__tag">4 владельца</span>
+            </div>
+            <a href="14.html" class="card__link">Подробнее об автомобиле</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card fade-in">
+          <a href="car-audi-a4.html" class="card__image-wrap">
+            <img src="img/bmw-3.jpg" alt="BMW 3 Series" class="card__image" />
+
+            <span class="card__badge card__badge--alt">Скоро в продаже</span>
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Audi A4</h3>
+            <p class="card__meta">2019 • 2.0 TFSI • Автомат • 52 000 км</p>
+            <div class="card__row">
+              <span class="card__price">2 150 000 ₽</span>
+              <span class="card__tag">Полная история</span>
+            </div>
+            <a href="car-audi-a4.html" class="card__link">Подробнее об автомобиле</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card fade-in">
+          <a href="car-toyota-camry.html" class="card__image-wrap">
+            <img src="https://images.pexels.com/photos/2100193/pexels-photo-2100193.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Toyota Camry" class="card__image" />
+            <span class="card__badge">В наличии</span>
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Toyota Camry</h3>
+            <p class="card__meta">2017 • 2.5 бензин • Автомат • 89 000 км</p>
+            <div class="card__row">
+              <span class="card__price">1 700 000 ₽</span>
+              <span class="card__tag">Гарантия на ДВС и АКПП</span>
+            </div>
+            <a href="car-toyota-camry.html" class="card__link">Подробнее об автомобиле</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+<section class="section section--accent" id="services">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">Наши услуги</h2>
+      <p class="section__subtitle">
+        Полный спектр услуг для безопасной и выгодной покупки автомобиля.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Продажа авто -->
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <img src="img/sale.png" alt="Продажа авто">
+        </div>
+        <h3 class="service-card__title">Продажа авто</h3>
+        <p class="service-card__text">
+          Готовые проверенные автомобили с прозрачной историей, диагностикой и гарантией.
+        </p>
+        <div class="service-card__line"></div>
+      </div>
+
+      <!-- Комиссионная продажа -->
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <img src="img/commission.png" alt="Комиссионная продажа">
+        </div>
+        <h3 class="service-card__title">Комиссионная продажа</h3>
+        <p class="service-card__text">
+          Продаём ваш автомобиль быстрее и дороже — берём на себя показы, торг и оформление.
+        </p>
+        <div class="service-card__line"></div>
+      </div>
+
+      <!-- Автовыкуп -->
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <img src="img/buyout.png" alt="Автовыкуп">
+        </div>
+        <h3 class="service-card__title">Автовыкуп</h3>
+        <p class="service-card__text">
+          Срочный выкуп авто по честной цене. Деньги в день обращения, без стресса и ожиданий.
+        </p>
+        <div class="service-card__line"></div>
+      </div>
+
+      <!-- Автоподбор -->
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <img src="img/search.png" alt="Автоподбор">
+        </div>
+        <h3 class="service-card__title">Автоподбор</h3>
+        <p class="service-card__text">
+          Находим лучший вариант под ваш бюджет: проверяем историю, диагностику и юридическую чистоту.
+        </p>
+        <div class="service-card__line"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Process -->
+<section class="section section--dark" id="process">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">Как мы работаем</h2>
+      <p class="section__subtitle">
+        Один прозрачный процесс для любой задачи — покупка, продажа, выкуп или подбор автомобиля.
+      </p>
+    </div>
+
+    <div class="process-grid">
+
+      <!-- Шаг 1 -->
+      <div class="process-card fade-in">
+        <div class="process-card__number">1</div>
+        <h3 class="process-card__title">Обсуждаем задачу</h3>
+        <p class="process-card__text">
+          Вы рассказываете, что нужно: купить, продать, подобрать или быстро выкупить авто.
+          Уточняем детали, бюджет, сроки и формируем оптимальный план действий.
+        </p>
+      </div>
+
+      <!-- Шаг 2 -->
+      <div class="process-card fade-in">
+        <div class="process-card__number">2</div>
+        <h3 class="process-card__title">Проводим проверку и оценку</h3>
+        <p class="process-card__text">
+          Изучаем историю, делаем диагностику, оцениваем состояние и рыночную стоимость.
+          Даём честную картину без приукрашивания — только факты.
+        </p>
+      </div>
+
+      <!-- Шаг 3 -->
+      <div class="process-card fade-in">
+        <div class="process-card__number">3</div>
+        <h3 class="process-card__title">Предлагаем лучшие решения</h3>
+        <p class="process-card__text">
+          Подбираем варианты, готовим авто к продаже, ведём переговоры или предлагаем честную цену выкупа.
+          Вы принимаете решение на основе прозрачной информации.
+        </p>
+      </div>
+
+      <!-- Шаг 4 -->
+      <div class="process-card fade-in">
+        <div class="process-card__number">4</div>
+        <h3 class="process-card__title">Оформляем и завершаем сделку</h3>
+        <p class="process-card__text">
+          Берём на себя документы, договор, проверку сторон и страховку.
+          Вы получаете результат — покупку, продажу, выкуп или подобранный автомобиль.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Benefits -->
+<section class="section" id="benefits">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">Почему выбирают нас</h2>
+      <p class="section__subtitle">
+        Мы зарабатываем на хорошем автомобиле, а не на проблемах клиента.
+      </p>
+    </div>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-card fade-in">
+        <div class="benefit-card__icon">✓</div>
+        <h3 class="benefit-card__title">Без сюрпризов</h3>
+        <p class="benefit-card__text">
+          Пробег, ДТП, владельцы, ограничения — всё показываем честно и заранее.
+        </p>
+      </div>
+
+      <div class="benefit-card fade-in">
+        <div class="benefit-card__icon">⚙</div>
+        <h3 class="benefit-card__title">Проверяем как для себя</h3>
+        <p class="benefit-card__text">
+          Диагностика двигателя, коробки, ходовой и электрики. Берём только достойные авто.
+        </p>
+      </div>
+
+      <div class="benefit-card fade-in">
+        <div class="benefit-card__icon">★</div>
+        <h3 class="benefit-card__title">Сопровождаем до результата</h3>
+        <p class="benefit-card__text">
+          Помогаем с оформлением, страховкой и остаёмся на связи после покупки.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Reviews -->
+<section class="section section--light" id="reviews">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">Отзывы клиентов</h2>
+      <p class="section__subtitle">Коротко о том, как это выглядит глазами тех, кто уже купил.</p>
+    </div>
+
+    <div class="reviews-grid">
+
+      <article class="review-card fade-in">
+        <p class="review-card__text">«Подобрали BMW 3 за три дня, всё прозрачно, отчёты, диагностика — без сюрпризов.»</p>
+        <div class="review-card__meta">
+          <span class="review-card__name">Алексей</span>
+          <span class="review-card__car">BMW 3 Series, 2018</span>
+        </div>
+      </article>
+
+      <article class="review-card fade-in">
+        <p class="review-card__text">«Боялась брать авто с пробегом, но после диагностики и гарантий стало спокойнее.»</p>
+        <div class="review-card__meta">
+          <span class="review-card__name">Мария</span>
+          <span class="review-card__car">Toyota Camry, 2017</span>
+        </div>
+      </article>
+
+      <article class="review-card fade-in">
+        <p class="review-card__text">«Сделали видеообзор, всё объяснили, помогли с оформлением кредита. Рекомендую.»</p>
+        <div class="review-card__meta">
+          <span class="review-card__name">Игорь</span>
+          <span class="review-card__car">Audi A4, 2019</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contacts / CTA -->
+<section class="section section--accent" id="contacts">
+  <div class="container contacts__inner">
+
+    <div class="contacts__info">
+      <h2 class="section__title section__title--light">Оставьте заявку</h2>
+      <p class="section__subtitle section__subtitle--light">
+        Выберите услугу, укажите детали — мы свяжемся с вами и предложим лучшее решение.
+      </p>
+
+      <div class="contacts__details">
+        <div>
+          <span class="contacts__label">Телефон</span>
+          <a href="tel:+79990000000" class="contacts__value">+7 (999) 000‑00‑00</a>
+        </div>
+        <div>
+          <span class="contacts__label">Telegram / WhatsApp</span>
+          <a href="#" class="contacts__value">@drivehub_auto</a>
+        </div>
+        <div>
+          <span class="contacts__label">Город</span>
+          <span class="contacts__value">Москва / область</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="form form--main" id="smartLeadForm" enctype="multipart/form-data">
+
+      <!-- Выбор услуги -->
+      <div class="form-field">
+        <label class="form-label">Услуга</label>
+        <div class="form-input-wrap">
+          <span class="form-icon">🛠</span>
+          <select name="service" id="serviceSelect" class="form-select" required>
+            <option value="">Выберите услугу</option>
+            <option value="Продажа авто">Продажа авто</option>
+            <option value="Комиссионная продажа">Комиссионная продажа</option>
+            <option value="Автовыкуп">Автовыкуп</option>
+            <option value="Автоподбор">Автоподбор</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Имя -->
+      <div class="form-field">
+        <label class="form-label">Имя</label>
+        <div class="form-input-wrap">
+          <span class="form-icon">👤</span>
+          <input type="text" name="name" class="form-input" required placeholder="Как к вам обращаться?" />
+        </div>
+      </div>
+
+      <!-- Контакт -->
+      <div class="form-field">
+        <label class="form-label">Контакт</label>
+        <div class="form-input-wrap">
+          <span class="form-icon">📱</span>
+          <input type="text" name="contact" class="form-input" required placeholder="Телефон или Telegram" />
+        </div>
+      </div>
+
+      <!-- Динамическое поле: фото -->
+      <div class="form-field hidden" id="photoField">
+        <label class="form-label">Фото автомобиля</label>
+        <input type="file" name="photo" class="form-input" accept="image/*" />
+        <p class="form__note">Загрузите 1–3 фото автомобиля</p>
+      </div>
+
+      <!-- Динамическое поле: параметры авто -->
+      <div class="form-field hidden" id="carParamsField">
+        <label class="form-label">Параметры автомобиля</label>
+        <textarea name="car_params" class="form-textarea" rows="3" placeholder="Марка, модель, год, бюджет"></textarea>
+      </div>
+
+      <!-- Комментарий -->
+      <div class="form-field">
+        <label class="form-label">Комментарий</label>
+        <textarea name="comment" class="form-textarea" rows="4" placeholder="Опишите задачу или пожелания"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--full">Отправить заявку</button>
+
+      <p class="form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+    </form>
+
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <a href="index.html" class="logo footer__logo">
+          <span class="logo__mark">
+            <img src="logo-drivehub.png" alt="Drive Hub" />
+          </span>
+          <span class="logo__text">Drive Hub</span>
+        </a>
+        <p class="footer__text">Подбор и продажа проверенных автомобилей с пробегом.</p>
+      </div>
+      <div class="footer__center">
+        <a href="#catalog" class="footer__link">Каталог</a>
+        <a href="#process" class="footer__link">Как это работает</a>
+        <a href="#benefits" class="footer__link">Преимущества</a>
+        <a href="#contacts" class="footer__link">Контакты</a>
+      </div>
+      <div class="footer__right">
+        <span class="footer__copy">© Drive Hub, 2026</span>
+        <span class="footer__copy">Не является публичной офертой</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Заявка отправлена. Мы свяжемся с вами в ближайшее время.</div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
